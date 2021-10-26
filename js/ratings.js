@@ -21,7 +21,7 @@ function collect_ratings(){
     }
     
     document.addEventListener('change', (event) => {
-        document.querySelector('#average').value = ratings.average.toFixed(2);
+        ratings.average = toFixed(document.querySelector('#average').value);
     });
     
 
