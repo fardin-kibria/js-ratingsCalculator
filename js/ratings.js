@@ -15,9 +15,9 @@ function collect_ratings(){
         ratings.sum += rating*parseInt(element.value);
     })
 
-    if (ratings.count != 0){
-        ratings.average = ratings.sum/ratings.count;
-        return ratings;
+    if (ratings.count !== 0){
+        ratings.average = ratings.sum/ratings.count;   
+        return ratings; 
     }
     
     document.addEventListener('change', (event) => {
